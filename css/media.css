@@ -1,0 +1,169 @@
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 630px;
+    }
+
+    nav ul {
+        display: none;
+    }
+    header button {
+        display: none;
+    }
+    .services {
+        padding: 50px 0;
+    }
+
+    .services > h4 {
+        display: none;
+    }
+    .all_services {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, minmax(auto, 360px));
+    }
+
+    .left_block h4 {
+        display: none;
+   }
+
+   .company_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 20px 1fr 20px);
+    grid-template-rows: repeat(2, 120px);
+    padding-top: 66px;
+    padding-left: 85px;
+    padding-bottom: 76px;
+    height: 1436px;
+}
+
+.four_blocks_section {
+    padding-top: 400px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 120px);
+    grid-column-start: 1;
+    gap: 30px;
+}
+.four_blocks {
+    height: 120px;
+    width: 630px;
+    background: #EBEBEB;
+    padding-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content:space-evenly;
+ 
+}
+
+.four_blocks h3 {
+    padding: 33px;
+    
+    
+}
+
+
+.left_block p {
+    width: 630px;
+
+}
+
+    .contact {
+        display: block;
+        background-image: url("../img/contact.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 122px 0 160px;
+        color: white;
+        
+    }
+
+    .contact form {
+        display: grid;
+        grid-template-areas: 
+        "name surname"
+        "message message"
+        ". send";
+        gap: 35px;
+        
+    }
+    .contact h2 {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 69px;
+        color: #FFFFFF;
+        font-family: 'Merriweather', serif;
+        padding-left: 99px;
+        padding-bottom: 60px;
+
+    }
+
+    .name {
+        grid-area: name;
+        
+    }
+   .container input {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid;
+        border-color: #FFFFFF;
+        padding: 10px 0;
+   }
+
+   .container textarea {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid;
+        border-color: #FFFFFF;
+        padding: 10px 0;
+   }
+   
+    .surname {
+        grid-area: surname;
+    }
+    .message {
+        grid-area: message;
+    }
+    .send {
+        grid-area: send;
+    }
+    label {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact p {
+        padding-left: 96px;
+        padding-bottom: 80px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+        font-weight: lighter;
+    }
+   .icons {
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 29px;
+        font-family: 'Lato', sans-serif;
+        color: #FFFFFF;
+        text-transform: lowercase;
+        padding-bottom: 81px;
+        display: flex;
+        justify-content:space-evenly;
+       
+
+   }
+   .send {
+        background-color: #005FA3;
+        padding: 10px;
+        color: white;
+        max-width: 312px;
+        cursor: pointer;
+        border-radius: none;
+        text-align: center;
+        height: 60px;
+        
+   }
+}
+
+
